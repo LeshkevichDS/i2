@@ -5,9 +5,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-family: "Montserrat", "Arial", sans-serif;
-    color: #f2f2f2;
     background: url("img/pattern-lines-hero.svg") center;
-    background-color: #141530;
 }
 
 .container {
@@ -33,7 +31,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #f2f2f2;
+    color: inherit;
 }
 
 .header-contacts {
@@ -89,7 +87,7 @@ h1 {
 
 .page-design {
     height: 170px;
-    background: url(img/bg-tags.svg) no-repeat center #0b0c23;
+    background: url(img/bg-tags.svg) no-repeat center;
     border-top: 2px solid #5053a8;
     border-bottom: 2px solid #5053a8;
 }
@@ -138,7 +136,6 @@ h2 {
 .skills-item {
     height: 420px;
     width: 300px;
-    background: #0b0c23;
     border-radius: 20px;
     border: 2px solid #5053a8;
 }
@@ -281,4 +278,22 @@ h2 {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.dark {
+    color: #f2f2f2;
+    background-color: #141530;
+}
+
+.darkness {
+    background-color: #0b0c23;
+}
+
+.light {
+    color: #141530;
+    background-color: #f2f2f2;
+}
+
+.lightness {
+    background-color: #cccccc;
 }
