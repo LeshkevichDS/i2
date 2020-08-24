@@ -140,6 +140,7 @@ h2 {
     width: 300px;
     background: #0b0c23;
     border-radius: 20px;
+    border: 2px solid #5053a8;
 }
 
 .skills-item p {
