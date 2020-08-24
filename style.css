@@ -136,14 +136,13 @@ h2 {
 }
 
 .skills-item {
-    height: 400px;
+    height: 420px;
     width: 300px;
     background: #0b0c23;
     border-radius: 20px;
 }
 
 .skills-item p {
-    height: 75px;
     margin: 10px;
 }
 
