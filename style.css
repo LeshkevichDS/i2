@@ -357,9 +357,9 @@ h2 {
 
 .light {
     color: #141530;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
 }
 
 .lightness {
-    background: url(img/bg-tags-alt.svg) no-repeat center #f9f9f9;
+    background: url(img/bg-tags-alt.svg) no-repeat center #eeeeee;
 }
