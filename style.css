@@ -173,7 +173,6 @@ h1 {
 
 .page-design {
     height: 170px;
-    background: url(img/bg-tags.svg) no-repeat center;
     border-top: 2px solid #5053a8;
     border-bottom: 2px solid #5053a8;
 }
@@ -229,7 +228,7 @@ h2 {
     position: relative;
     height: 440px;
     width: 330px;
-    border: 1px solid #a298e2;
+    border: 1px solid #5053a8;
 }
 
 
@@ -278,7 +277,7 @@ h2 {
     margin: 0 25px 0;
     height: 10px;
     text-align: right;
-    border: 1px solid #a298e2;
+    border: 1px solid #5053a8;
     border-radius: 2px;
     overflow: hidden;
 }
@@ -287,7 +286,7 @@ h2 {
     margin: 0;
     height: 10px;
     letter-spacing: 1px;
-    background-color: #a298e2;
+    background-color: #5053a8;
 }
 
 .skills-item p {
@@ -353,7 +352,7 @@ h2 {
 }
 
 .darkness {
-    background-color: #0b0c23;
+    background: url(img/bg-tags.svg) no-repeat center #0b0c23;
 }
 
 .light {
@@ -362,5 +361,5 @@ h2 {
 }
 
 .lightness {
-    background-color: #f9f9f9;
+    background: url(img/bg-tags-alt.svg) no-repeat center #f9f9f9;
 }
