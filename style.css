@@ -9,24 +9,8 @@ body {
 }
 
 .container {
-    position: relative;
     width: 1500px;
     margin: 0 auto;
-}
-
-.page-header {
-    height: 55px;
-    padding-top: 45px;
-}
-
-.page-header a {
-    text-transform: uppercase;
-    margin-right: 70px;
-    padding-bottom: 10px;
-}
-
-.page-header a:last-child {
-    margin-right: 0px;
 }
 
 a {
@@ -34,11 +18,117 @@ a {
     color: inherit;
 }
 
-.header-contacts {
-    position: absolute;
-    top: 0;
-    right: 0;
+.page-header {
+    height: 55px;
+    padding-top: 45px;
 }
+
+.page-header .container {
+    display: flex;
+}
+
+.page-header a {
+    text-transform: uppercase;
+    margin-right: 70px;
+    padding-bottom: 5px;
+}
+
+.page-header a:nth-child(4) {
+    margin-left: auto;
+    font-size: 12px;
+}
+
+.page-header a:nth-child(5) {
+    font-size: 12px;
+}
+
+.email,
+.phone {
+   padding-left: 25px;
+}
+
+.email {
+    background: url("img/icon-email.svg") no-repeat left 20%;
+    background-size: 20px auto;
+}
+
+.email:hover {
+    background: url("img/icon-email-alt.svg") no-repeat left 20%;
+    background-size: 20px auto;
+}
+
+.phone {
+    background: url("img/icon-phone.svg") no-repeat left 20%;
+    background-size: 20px auto;
+}
+
+.phone:hover {
+    background: url("img/icon-phone-alt.svg") no-repeat left 20%;
+    background-size: 20px auto;
+}
+
+/* свич темы */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #ff7e4d;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #ff7e4d;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* ------------------- */
 
 .page-promo {
     height: 780px;
@@ -70,10 +160,6 @@ a {
 
 .page-promo a {
     margin-top: 40px;
-    background-color: #ff7e4d;
-    text-transform: lowercase;
-    color: #f2f2f2;
-    font-weight: 600;
     padding: 8px 35px;
 }
 
@@ -93,36 +179,42 @@ h1 {
 }
 
 h2 {
+    margin: 0 0 60px;
     text-align: left;
-    font-size: 72px;
-    line-height: 88px;
-    font-weight: 500;
-    color: #f9dd79;
+    font-size: 50px;
+    line-height: 66px;
+    font-weight: 100;
+    color: #ff7e4d;
 }
 
 .btn {
     display: inline-block;
     vertical-align: baseline;
-    color: #0b0c23;
-    background-color: #f9dd79;
+    color: #f2f2f2;
+    background-color: #ff7e4d;
     padding: 8px 24px;
     font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-weight: 600;
+    text-transform: lowercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 16px rgba(249, 221, 121, 0.4);
+    box-shadow: 0 4px 16px rgba(255, 126, 77, 0.4);
     border-radius: 24px;
     transition: background-color 100ms, box-shadow 100ms;
 }
 
 .btn:hover {
-    background-color: #f9e7a8;
-    box-shadow: 0 4px 32px rgba(249, 221, 121, 0.6);
+    background-color: #ff7e4d;
+    box-shadow: 0 4px 32px rgba(255, 126, 77, 0.6);
 }
   
 .btn:active {
-    background-color: #b69e4b;
+    background-color: rgb(194, 97, 59);
     box-shadow: none;
+}
+
+.page-skills {
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 .skills-nav {
@@ -134,68 +226,73 @@ h2 {
 }
 
 .skills-item {
-    height: 420px;
-    width: 300px;
-    border-radius: 20px;
-    border: 2px solid #5053a8;
+    position: relative;
+    height: 440px;
+    width: 330px;
+    border: 2px solid #ff7e4d;
 }
 
-.skills-item p {
-    margin: 10px;
+
+.skills-item h3 {
+    font-family: "Gill Sans Ultra Bold", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin: 45px auto 25px;
+}
+
+.logo-html,
+.logo-css,
+.logo-js {
+    height: 200px;
+    width: 180px;
+    margin: 0 auto 80px;
 }
 
 .logo-html {
-    height: 250px;
-    width: 180px;
-    margin: 10px auto;
-    background: url("img/sprite.png") no-repeat;
+    background: url("img/sprite.png") no-repeat 0 bottom;
 }
 
 .logo-css {
-    height: 250px;
-    width: 180px;
-    margin: 10px auto;
-    background: url("img/sprite.png") no-repeat;
-    background-position-x: -232px;
+    background: url("img/sprite.png") no-repeat -232px bottom;
 }
 
 .logo-js {
-    height: 250px;
-    width: 180px;
-    margin: 10px auto;
-    background: url("img/sprite.png") no-repeat;
-    background-position-x: -465px;
+    background: url("img/sprite.png") no-repeat -465px bottom;
 }
 
 .logo-react {
     height: 250px;
     width: 250px;
-    margin: 10px auto;
+    margin: -20px auto 50px;
     background: url("img/React.js_logo.png") no-repeat;
 }
 
+.skills-item b {
+    position: absolute;
+    top: 340px;
+    right: 30px;
+}
+
 .level {
-    margin: 0 0 10px;
-    height: 24px;
+    margin: 0 25px 0;
+    height: 10px;
     text-align: right;
-    background-color: #0b0c23;
-    box-shadow: inset 0 0 12px #070716;
-    border-radius: 12px;
+    border: 1px solid #ff7e4d;
+    border-radius: 2px;
     overflow: hidden;
 }
 
 .level div {
     margin: 0;
-    height: 24px;
+    height: 10px;
     letter-spacing: 1px;
-    line-height: 26px;
-    background-color: #5053a8;
-    background-image: url("img/progress-pattern.svg");
+    background-color: #ff7e4d;
 }
 
-.cv {
-    margin-top: 100px;
-    margin-left: 635px;
+.skills-item p {
+    margin-top: 90px;
+    text-align: center;
 }
 
 .page-catalog {
@@ -219,66 +316,36 @@ h2 {
     padding: 40px 0;
 }
 
-.email {
-    margin-right: 50px;
-    background: url("img/icon-email.svg") no-repeat left;
-    padding: 10px 0 10px 25px;
-}
-
-.email:hover {
-    background: url("img/icon-email-alt.svg") no-repeat left;
-}
-
-.phone {
-    background: url("img/icon-phone.svg") no-repeat left;
-    padding-left: 25px;
-    padding: 10px 0 10px 25px;
-}
-
-.phone:hover {
-    background: url("img/icon-phone-alt.svg") no-repeat left;
-}
+/* Подчеркивание ссылок */
 
 .page-header a,
-.footer-contacts a,
-.footer-social a {
+.page-footer a {
     position: relative;
 }
 
 .page-header a:hover,
-.footer-contacts a:hover,
-.footer-social a:hover {
-    color: #f9dd79;
+.page-footer a:hover {
+    color: #ff7e4d;
 }
 
 .page-header a::after,
-.footer-contacts a::after,
-.footer-social a::after {
+.page-footer a::after {
     position: absolute;
     content: "";
     bottom: 0;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #f9dd79;
+    background-color: #ff7e4d;
     transition: width 200ms;
 }
 
 .page-header a:hover::after,
-.footer-contacts a:hover::after,
-.footer-social a:hover::after {
+.page-footer a:hover::after {
     width: 100%;
 }
 
-.footer-social {
-    margin-top: 20px;
-}
-
-.contacts {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+/* Переключение темы */
 
 .dark {
     color: #f2f2f2;
@@ -295,5 +362,5 @@ h2 {
 }
 
 .lightness {
-    background-color: #cccccc;
+    background-color: #f9f9f9;
 }
