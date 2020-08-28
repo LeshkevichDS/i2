@@ -47,18 +47,8 @@ a {
    padding-left: 25px;
 }
 
-.email {
-    background: url("img/icon-email.svg") no-repeat left 20%;
-    background-size: 20px auto;
-}
-
 .email:hover {
     background: url("img/icon-email-alt.svg") no-repeat left 20%;
-    background-size: 20px auto;
-}
-
-.phone {
-    background: url("img/icon-phone.svg") no-repeat left 20%;
     background-size: 20px auto;
 }
 
@@ -351,8 +341,18 @@ h2 {
     background-color: #141530;
 }
 
-.darkness {
+.dark1 {
     background: url(img/bg-tags.svg) no-repeat center #0b0c23;
+}
+
+.dark2 {
+    background: url("img/icon-email.svg") no-repeat left 20%;
+    background-size: 20px auto;
+}
+
+.dark3 {
+    background: url("img/icon-phone.svg") no-repeat left 20%;
+    background-size: 20px auto;
 }
 
 .light {
@@ -360,6 +360,16 @@ h2 {
     background-color: #f2f2f2;
 }
 
-.lightness {
+.light1 {
     background: url(img/bg-tags-alt.svg) no-repeat center #eeeeee;
+}
+
+.light2 {
+    background: url("img/icon-email-dark.svg") no-repeat left 20%;
+    background-size: 20px auto;
+}
+
+.light3 {
+    background: url("img/icon-phone-dark.svg") no-repeat left 20%;
+    background-size: 20px auto;
 }
