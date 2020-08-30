@@ -30,21 +30,17 @@ a {
 .page-header a {
     text-transform: uppercase;
     margin-right: 70px;
-    padding-bottom: 5px;
 }
 
-.page-header a:nth-child(4) {
-    margin-left: auto;
-    font-size: 12px;
-}
-
-.page-header a:nth-child(5) {
-    font-size: 12px;
+.page-header a:nth-child(3) {
+    margin-right: auto;
 }
 
 .email,
 .phone {
    padding-left: 25px;
+   font-size: 12px;
+   text-transform: uppercase;
 }
 
 .email:hover {
@@ -347,15 +343,41 @@ h2 {
     margin-bottom: 100px;
 }
 
+.page-cv img {
+    float: left;
+    height: 200px;
+    margin-right: 80px;
+}
+
+.page-cv p,
+.page-cv b,
+.page-cv li {
+    line-height: 30px;
+}
+
+.page-cv li {
+    margin-top: 30px;
+    list-style: square url("img/rectangle.svg");
+}
+
+.page-cv li:nth-child(1) {
+    margin-top: 60px;
+}
+
 .page-footer {
     background: #212349;
     padding: 40px 0;
+}
+
+.footer-contacts a {
+    display: block;
 }
 
 /* Подчеркивание ссылок */
 
 .underline {
     position: relative;
+    padding-bottom: 5px;
 }
 
 .underline:hover {
