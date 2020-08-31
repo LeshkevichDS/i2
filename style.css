@@ -348,6 +348,7 @@ h2 {
 .page-cv img {
     float: left;
     height: 200px;
+    width: auto;
     margin-right: 80px;
 }
 
