@@ -1,3 +1,5 @@
+// изменение темы
+
 var body = document.querySelector('body');
 var designs = document.querySelectorAll('.page-design');
 var theme = document.querySelector('.theme');
@@ -17,3 +19,19 @@ theme.onclick = function () {
     phone.classList.toggle('light3');
 };
 
+// стрелка вверх
+
+var up = document.querySelector('.up');
+
+window.onscroll = function () {
+    if (window.pageYOffset > 900) {
+        up.classList.add('shown');
+    } else {
+        up.classList.remove('shown');
+    }
+};
+  
+up.onclick = function () {
+    window.scrollTo(0, 0);
+};
+  
