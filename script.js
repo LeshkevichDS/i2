@@ -1,8 +1,8 @@
 var body = document.querySelector('body');
 var designs = document.querySelectorAll('.page-design');
 var theme = document.querySelector('.theme');
-var emails = document.querySelectorAll('.email');
-var phones = document.querySelectorAll('.phone');
+var email = document.querySelector('.email');
+var phone = document.querySelector('.phone');
 
 theme.onclick = function () {
     body.classList.toggle('dark');
@@ -11,13 +11,9 @@ theme.onclick = function () {
         design.classList.toggle('dark1');
         design.classList.toggle('light1');
     }
-    for (let email of emails) {
-        email.classList.toggle('dark2');
-        email.classList.toggle('light2');
-    }
-    for (let phone of phones) {
-        phone.classList.toggle('dark3');
-        phone.classList.toggle('light3');
-    }
+    email.classList.toggle('dark2');
+    email.classList.toggle('light2');
+    phone.classList.toggle('dark3');
+    phone.classList.toggle('light3');
 };
 
