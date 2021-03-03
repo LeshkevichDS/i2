@@ -2,6 +2,6 @@
 
 <a href="https://leshkevichds.github.io/my-first-site/">Deploy link</a>
 
-# Technology stack
+## Technology stack
 
 JavaScript, HTML, CSS
